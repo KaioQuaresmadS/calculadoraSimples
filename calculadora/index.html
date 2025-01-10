@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="padraoStyle.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Calculadora Simples</h1>
+        <div class="nav-container">
+            <input required class="entrada" id="n1" type="text" placeholder="Digite um número:">
+            <input  class="entrada" id="n2" type="text" placeholder="Digite outro número:">
+            <select name="opMathe" id="opMathe" class="entrada">
+                <option value="" disabled selected> Selecione o operador</option>
+                <option value="soma" id="soma">Soma ( + )</option>
+                <option value="subtracao" id="subtracao">Subtração( - )</option>
+                <option value="multiplicacao" id="multiplicacao">Multiplicação ( * )</option>
+                <option value="divisao" id="divisao">Divisão ( / )</option>
+            </select>
+            <button class="btn" onclick="calcularNum()">Calcular</button>
+            <button class="btn" onclick="limparPage()">Limpar</button>
+        </div>
+        <p></p>
+    </header>
+    <script src="exercicio01.js"></script>
+</body>
+</html>
